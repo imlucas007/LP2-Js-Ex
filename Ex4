@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		<table border=3>
+			<tr>
+				<td>  °C  </td>
+				<% for(double c=20; c<=120; c = c + 0.5){
+					out.print("<td>" + c + "</td>");
+				} %>
+			</tr>
+			<tr>
+				<td>  °F  </td>
+				<% for(double c=20; c<=120; c = c + 0.5){
+					out.print("<td>" + ((c * 9/5) + 32) + "</td>");
+				} %>
+			</tr>
+		</table>	
+</body>
+</html>
