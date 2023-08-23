@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<% Integer temp = 25;
+		Integer tempFar = 0;
+		tempFar = (temp * 9/5) + 32; %>
+	<%="<h1> A temperatura em Graus Celsius é: " + temp + "</h1>" %>
+	<%="<h1> A temperatura em Graus Fahrenheit é: " + tempFar + "</h1>" %>
+		
+</body>
+</html>
